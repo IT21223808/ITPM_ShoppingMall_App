@@ -35,7 +35,7 @@ const feedbackform = () => {
             feedback: feedback,
             rating: rating
         }
-        axios.post("http://192.168.8.101:8000/addFeedback", data).then((response) => {
+        axios.post("http://192.168.8.100:8000/addFeedback", data).then((response) => {
             Alert.alert(
                 "Feedback Submitted",
                 "Thank You for your valuable feedback"

@@ -13,7 +13,7 @@ const viewfeedback = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const response = await axios.get("http://192.168.8.101:8000/feedbacks")
+                const response = await axios.get("http://192.168.8.100:8000/feedbacks")
                 setFeedback(response.data);
                 console.log("User:", response.data);
             } catch (error) {

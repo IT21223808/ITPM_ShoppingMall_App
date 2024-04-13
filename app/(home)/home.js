@@ -50,35 +50,35 @@ const index = () => {
 
         
           <View
-            style={{
-              marginTop: 100,
-              backgroundColor: "white",
-              paddingHorizontal: 10,
-              paddingVertical: 10,
-              borderRadius: 7,
-            }}
+            // style={{
+            //   marginTop: 100,
+            //   backgroundColor: "white",
+            //   paddingHorizontal: 10,
+            //   paddingVertical: 10,
+            //   borderRadius: 7,
+            // }}
           >
             <Pressable
-           onPress={() => 
-            // router.push("/(home)/user")
-            router.push({
-                pathname: "/(home)/userinfo",
-                params: {
-                  name: name,
-                  id: _id
-                },
-              })
-        }
-              style={{
-                backgroundColor: "#e8aa74",
-                borderRadius: 6,
-                padding: 10,
-                flexDirection: "row",
-                alignItems: "center",
-                marginVertical: 10,
-              }}
+        //    onPress={() => 
+        //     // router.push("/(home)/user")
+        //     router.push({
+        //         pathname: "/(home)/userinfo",
+        //         params: {
+        //           name: name,
+        //           id: _id
+        //         },
+        //       })
+        // }
+              // style={{
+              //   backgroundColor: "#e8aa74",
+              //   borderRadius: 6,
+              //   padding: 10,
+              //   flexDirection: "row",
+              //   alignItems: "center",
+              //   marginVertical: 10,
+              // }}
             >
-              <View
+              {/* <View
                 style={{
                   padding: 7,
                   width: 45,
@@ -90,8 +90,8 @@ const index = () => {
                 }}
               >
                 <Ionicons name="ios-people-sharp" size={24} color="black" />
-              </View>
-              <Text
+              </View> */}
+              {/* <Text
                 style={{
                   marginLeft: 10,
                   fontSize: 16,
@@ -100,8 +100,8 @@ const index = () => {
                 }}
               >
                 My Profile
-              </Text>
-              <View
+              </Text> */}
+              {/* <View
                 style={{
                   width: 35,
                   height: 35,
@@ -112,7 +112,7 @@ const index = () => {
                 }}
               >
                 <Entypo name="chevron-right" size={24} color="black" />
-              </View>
+              </View> */}
             </Pressable>
             <Pressable
                 onPress={() => router.push("/(home)/summary")}
@@ -273,23 +273,23 @@ const index = () => {
             >
           <View
             style={{
-              marginTop: 140,
+              marginTop: 500,
               flexDirection: "row",
               alignItems: "center",
               gap: 13,
             }}
           >
             <View
-              style={{
-                backgroundColor: "#636260",
-                borderRadius: 10,
-                padding: 12,
-                alignItems: "center",
-                justifyContent: "center",
-                flex: 1,
-              }}
+              // style={{
+              //   backgroundColor: "#636260",
+              //   borderRadius: 10,
+              //   padding: 12,
+              //   alignItems: "center",
+              //   justifyContent: "center",
+              //   flex: 1,
+              // }}
             >
-              <Text style={{ marginTop:2, marginBottom:2, color:"white",fontSize:18}}>Logout</Text>
+              {/* <Text style={{ marginTop:2, marginBottom:2, color:"white",fontSize:18}}>Logout</Text> */}
             </View>
           
           </View>

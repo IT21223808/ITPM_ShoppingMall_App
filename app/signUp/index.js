@@ -47,7 +47,7 @@ const index = () => {
     };
 
     axios
-      .post("http://192.168.8.101:8000/addUser", userData)
+      .post("http://192.168.8.100:8000/addUser", userData)
       .then((response) => {
         Alert.alert(
           "Registration Successful",

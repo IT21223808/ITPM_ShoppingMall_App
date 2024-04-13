@@ -2,6 +2,7 @@ import React from "react";
 import { ScrollView, Pressable, Text, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Feather, Entypo, Ionicons, Octicons, AntDesign, MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
+
 const SideBar = ({ isOpen, onClose, id, admin, name }) => {
     const router = useRouter();
     const handleCloseButtonClick = (event) => {
@@ -16,6 +17,17 @@ const SideBar = ({ isOpen, onClose, id, admin, name }) => {
             <Pressable onPress={handleCloseButtonClick} style={styles.closeButton}>
                 <AntDesign name="close" size={24} color="black" />
             </Pressable>
+            <View  style={{
+               
+                backgroundColor: "#b0acad",
+                borderRadius: 7,
+                paddingHorizontal :2,
+                paddingVertical: 25,
+              }} >
+               
+            <Text style={{ left: 15, marginTop: 2, fontSize: 36 ,fontFamily: 'sans-serif-condensed',color:'#bf0215'}}>WestField</Text>
+           
+            </View>
             <Pressable onPress={() =>
                 admin ?
                     router.push({ pathname: "/(home)/user" })
@@ -26,7 +38,7 @@ const SideBar = ({ isOpen, onClose, id, admin, name }) => {
                             id: id
                         },
                     })}
-                style={{ borderBottomWidth: 1, borderBottomColor: "#ccc", paddingVertical: 15, marginTop: 5 }}>
+                style={{ borderBottomWidth: 1, borderBottomColor: "#ccc", paddingVertical: 15, marginTop: 50 }}>
                 <View style={{ flexDirection: "row", justifyContent: "flex-start", marginTop: 5 }}>
                     {admin ? <Ionicons name="add" size={24} color="black" /> : <MaterialIcons name="feedback" size={24} color="black" style={{ left: 5, marginTop: 2 }} />}
                     <Text style={{ left: 10, marginTop: 4, fontSize: 16 }}> {admin ? 'Add New Product' : 'Feedback'}</Text>
@@ -80,7 +92,8 @@ const styles = StyleSheet.create({
     },
     closeButton: {
         position: "flex",
-        top: 10,
+        top:1,
+        left:9,
         right: 0,
     },
     sidebarItem: {

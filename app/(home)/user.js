@@ -13,7 +13,7 @@ const users = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://192.168.8.101:8000/users")
+        const response = await axios.get("http://192.168.8.100:8000/users")
         setUsers(response.data);
         console.log("User:",response.data);
       } catch (error) {

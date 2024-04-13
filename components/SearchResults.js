@@ -33,7 +33,7 @@ const SearchResults = ({ data, input, setInput }) => {
           text: "Delete",
           onPress: () => {
             try {
-              axios.delete(`http://192.168.8.101:8000/deleteuser/${itemId}`)
+              axios.delete(`http://192.168.8.100:8000/deleteuser/${itemId}`)
               console.log("User Deleted Successfully");
               Alert.alert("User deleted","User has been deleted sucessfully");
               router.push('/(home)/user');
