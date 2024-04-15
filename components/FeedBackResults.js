@@ -36,7 +36,7 @@ const FeedbackResults = ({ data, input, setInput }) => {
                         try {
                             axios.delete(`http://192.168.8.100:8000/deletefeedback/${itemId}`)
                             console.log("Feedback Deleted Successfully");
-                            Alert.alert("Feedback deleted","Feedback of the user has been deleted sucessfully");
+                            Alert.alert("Feedback deleted","Feedback of the user has been deleted Sucessfully");
                             router.push('/(home)/viewfeedback');
                         } catch (error) {
                             console.log("error while deleting feedback data", error);
