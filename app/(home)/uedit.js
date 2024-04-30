@@ -28,7 +28,7 @@ const uedit = () => {
     const fetchUserData = async () => {
       try {
         console.log("IDs", _id);
-        const response = await axios.get(`http://192.168.8.100:8000/users/${_id}`);
+        const response = await axios.get(`http://192.168.8.101:8000/users/${_id}`);
         setUserData(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -49,7 +49,7 @@ const uedit = () => {
     }
     try {
       const response = await axios.patch(
-        `http://192.168.8.100:8000/userupdate/${_id}`,
+        `http://192.168.8.101:8000/userupdate/${_id}`,
         userData
       );
       if (response.status === 200) {
