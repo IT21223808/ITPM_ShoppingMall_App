@@ -29,7 +29,7 @@ const UserEdit = () => {
     const fetchUserData = async () => {
       try {
         console.log("IDs", _id);
-        const response = await axios.get(`http://192.168.8.100:8000/users/${_id}`);
+        const response = await axios.get(`http://192.168.8.101:8000/users/${_id}`);
         setUserData(response.data);
         if (response.data.dateOfBirth) {
           setDob(new Date(response.data.dateOfBirth));
@@ -54,7 +54,7 @@ const UserEdit = () => {
     }
     try {
       const response = await axios.patch(
-        `http://192.168.8.100:8000/userupdate/${_id}`,
+        `http://192.168.8.101:8000/userupdate/${_id}`,
         updatedUserData
       );
       if (response.status === 200) {
