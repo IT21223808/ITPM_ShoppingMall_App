@@ -27,7 +27,7 @@ const SideBar = ({ isOpen, onClose, id, admin, name }) => {
                
             <Text style={{ left: 15, marginTop: 2, fontSize: 36 ,fontFamily: 'sans-serif-condensed',color:'#bf0215'}}>WestField</Text>
            
-            </View>
+           
             <Pressable onPress={() =>
                 admin ?
                     router.push({ pathname: "/(home)/user" })
@@ -74,6 +74,7 @@ const SideBar = ({ isOpen, onClose, id, admin, name }) => {
                     <Text style={{ left: 15, marginTop: 4, fontSize: 16 }}>LogOut</Text>
                 </View>
             </Pressable>
+            </View>
             {/* Add more sidebar items as needed */}
         </ScrollView>
     );
