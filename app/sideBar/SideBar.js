@@ -19,13 +19,13 @@ const SideBar = ({ isOpen, onClose, id, admin, name }) => {
             </Pressable>
             <View  style={{
                
-                backgroundColor: "#b0acad",
+                backgroundColor: "#ffccdd",
                 borderRadius: 7,
                 paddingHorizontal :2,
                 paddingVertical: 25,
               }} >
                
-            <Text style={{ left: 15, marginTop: 2, fontSize: 36 ,fontFamily: 'sans-serif-condensed',color:'#bf0215'}}>WestField</Text>
+            <Text style={{ left: 15, marginTop:1, fontSize: 36 ,fontFamily: 'sans-serif-condensed',color:'#000000'}}>WestField</Text>
            
            
             <Pressable onPress={() =>

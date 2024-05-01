@@ -74,7 +74,7 @@ const index = () => {
     };
   return (
     <ScrollView>
-      <LinearGradient colors={["#723bc4", "#ccb5e8"]} style={{ flex: 1 }}>
+      <LinearGradient colors={["#eeaeca", "#ccb5e8"]} style={{ flex: 1 }}>
         <View style={{ padding: 19 }}>
           <View
             style={{
@@ -96,8 +96,8 @@ const index = () => {
             /> */}
           
           <Image
-              source={require('../../assets/login.jpg')}
-              style={{ width: 390, height: 200, borderRadius:20, resizeMode:"cover", marginTop:15,right:18}} 
+              source={require('../../assets/login.png')}
+              style={{ width: 390, height: 200, borderRadius:20, resizeMode:"cover", marginTop:15,right:1}} 
             />
 
         
