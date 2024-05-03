@@ -5,9 +5,7 @@ import { Feather, Entypo, Ionicons, Octicons ,AntDesign,MaterialIcons,MaterialCo
 // import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { TextInput } from "react-native-gesture-handler";
-import LottieView from 'lottie-react-native';
 import axios from "axios";
-
 const index = () => {
   const [email, setEmail] = useState("");
   const[password,setPassword] = useState("");
@@ -31,8 +29,8 @@ const index = () => {
       }
       else{
         await axios
-        // 192.168.8.100:
-         .post("http://192.168.8.100:8000/login",userdata)
+        // 192.168.8.189:
+         .post("http://192.168.8.101:8000/login",userdata)
          .then((response) => {
            if(!(response.data == null)){
            Alert.alert(
@@ -76,19 +74,18 @@ const index = () => {
     };
   return (
     <ScrollView>
-      <LinearGradient colors={["#723bc4", "#ccb5e8"]} style={{ flex: 1 }}>
+      <LinearGradient colors={["#eeaeca", "#ccb5e8"]} style={{ flex: 1 }}>
         <View style={{ padding: 19 }}>
           <View
             style={{
-              marginTop: 90,
+              marginTop: 30,
               flexDirection: "row",
               alignItems: "center",
               justifyContent: "center",
             }}
           >
-          
          
-            <Text style={{ fontSize: 70, fontWeight: "600",fontFamily:"serif",marginTop:1}}>
+            <Text style={{ fontSize: 70, fontWeight: "600",fontFamily:"serif" }}>
               Login
             </Text>
       
@@ -99,8 +96,8 @@ const index = () => {
             /> */}
           
           <Image
-              source={require('../../assets/login.jpg')}
-              style={{ width: 390, height: 200, borderRadius:20, resizeMode:"cover", marginTop:10,right:6,left:7}} 
+              source={require('../../assets/login.png')}
+              style={{ width: 390, height: 200, borderRadius:20, resizeMode:"cover", marginTop:15,right:1}} 
             />
 
         

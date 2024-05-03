@@ -17,7 +17,7 @@ const userinfo = () => {
     const fetchUserData = async () => {
       try {
         console.log("IDs", _id);
-        const response = await axios.get(`http://192.168.8.100:8000/users/${_id}`);
+        const response = await axios.get(`http://192.168.8.101:8000/users/${_id}`);
         console.log("User details",response.data);
         setUser(response.data);
       } catch (error) {
